@@ -3,9 +3,9 @@ public class Assignment01Q03 {
         int x = Integer.parseInt(args[0]); // TODO: Read the first string argument (replace this line)
         System.out.println("The first " + x + " Fibonacci numbers are:");
 
-        int firstElem = 1;
-        int secondElem = 1;
-        int currentNum = 0;
+        long firstElem = 1;
+        long secondElem = 1;
+        long currentNum = 0;
         int numOdd = 0;
         for (int i = 0; i < x; i++) {
             if (i > 1){
@@ -21,7 +21,7 @@ public class Assignment01Q03 {
             else
                 currentNum = firstElem;
             System.out.print(currentNum);
-            if (currentNum % 2 == 1)
+            if (currentNum % 2 != 0)
                 numOdd++;
 
         if (i < x - 1) 
